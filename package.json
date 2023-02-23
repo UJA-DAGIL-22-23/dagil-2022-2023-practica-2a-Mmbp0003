@@ -1,0 +1,27 @@
+{
+  "name": "dagil-2022-2023-practica-2a-mmbp0003",
+  "version": "1.0.0",
+  "description": "Ejercicio TDD con Node.js y Jasmine",
+  "main": "monedas.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/UJA-DAGIL-22-23/dagil-2022-2023-practica-2a-Mmbp0003.git"
+  },
+  "keywords": [
+    "TDD",
+    "Jasmine",
+    "Node.js"
+  ],
+  "author": "Magdalena Bueno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UJA-DAGIL-22-23/dagil-2022-2023-practica-2a-Mmbp0003/issues"
+  },
+  "homepage": "https://github.com/UJA-DAGIL-22-23/dagil-2022-2023-practica-2a-Mmbp0003#readme",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}
