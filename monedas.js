@@ -43,6 +43,7 @@ monedas.esMonedaValida = function (valor) {
     if(valor >= 10 && valor / 10 != 2 && valor / 10 != 5 && valor / 10 != 1 ){return false};
     if(valor >= 100 && valor / 100 != 2 && valor / 100 != 1 && valor / 100 != 5 ){return false};
     if(valor > 500){return false};
+    if(valor == 0.05 || valor == 0.10 || valor == 0.20 || valor == 0.50 || valor == 1 || valor == 2 || valor == 5){return true};
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
 }
 
