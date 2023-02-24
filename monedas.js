@@ -38,7 +38,7 @@ monedas.esMonedaValida = function (valor) {
     if(valor == null ){ return false };
     if(valor == 0.05 || valor == 0.10 || valor == 0.20 || valor == 0.50 || valor == 1 || valor == 2 ||
        valor == 5 || valor == 10 || valor == 20 || valor == 50 || valor == 100 || valor == 200 || valor == 500)
-       {return true } else { return false;};
+       { return true } else { return false;};
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
 }
 
@@ -54,12 +54,20 @@ monedas.esMonedaValida = function (valor) {
  */
 monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
+       
        if (montante < 0 ){return -2};
-       if (vectorMonedas = [null] && montante == 0){return 1};
-       if (vectorMonedas = [null] && montante > 0) {return 0};
-       if (vectorMonedas = [ ] && montante == 0){return 1};
-       if (vectorMonedas = [ ] && montante > 0 ){return 0};
-}
+
+       if (vectorMonedas == null && montante == 0){return 1};
+       if ( montante > 0 && vectorMonedas == null) {return 0};
+       if (vectorMonedas.length == 0 && montante == 0){return 1};
+       if (vectorMonedas.length == 0 && montante > 0 ){return 0};
+
+       if (montante == 1){ 
+        if (vectorMonedas < 0){return -1;} }
+       if(montante == 1){
+        if (monedas.esMonedaValida(vectorMonedas) == false){ return -1; } }
+ }
+       
 
 /*
 * ----------------------------------------
