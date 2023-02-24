@@ -62,12 +62,60 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        if (vectorMonedas.length == 0 && montante == 0){return 1};
        if (vectorMonedas.length == 0 && montante > 0 ){return 0};
 
-       if (montante == 1){ 
-        if (vectorMonedas < 0){return -1;} }
-       if(montante == 1){
-        if (monedas.esMonedaValida(vectorMonedas) == false){ return -1; } }
- }
+       if (montante >= 1){ 
+         if (vectorMonedas < 0){return -1;} }
+       //Decidi dejarlo en modo texto, porque, de la otra manera funcionaba mejor     
        
+       if(montante >= 1){
+         existe = new Boolean(true);
+        let suma = 0;
+        for (var i = 0; i < vectorMonedas.length ; i++){
+                if (monedas.esMonedaValida(vectorMonedas[i]) == false){
+                    return -1;
+                }
+            }
+        }
+        
+        
+       if(montante > 0){
+        let suma = 0;
+        for (let i = 0; i < vectorMonedas.length ; i++){
+            if (monedas.esMonedaValida(vectorMonedas[i]) == true){
+                suma  += vectorMonedas[i];
+            } 
+        }
+        if ( montante >  suma){
+          return 0;
+        }
+        }
+       
+        
+       if (montante > 0){
+        let suma_2 = 0;
+        for (let i = 0; i < vectorMonedas.length; i++){
+            if (monedas.esMonedaValida(vectorMonedas[i]) == true){
+                suma_2 = suma_2 + vectorMonedas[i];              
+            } 
+        }
+        if (montante == suma_2){
+            return 1;
+        }
+       }
+       
+       if (montante > 0){
+        let suma_3 = 0;
+        for (let i = 0; i < vectorMonedas.length; i++){
+            if (monedas.esMonedaValida(vectorMonedas[i]) == true){
+                suma_3 = suma_3 + vectorMonedas[i];              
+            } 
+        }
+        if (suma_3 > montante){
+            return 2;
+        }
+       }
+    
+
+}     
 
 /*
 * ----------------------------------------
