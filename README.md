@@ -9,19 +9,13 @@ Necesitarás tener instalado Node.js para poder ejecutarlo. Por tanto, [descárg
 
 * https://nodejs.org/en/download/
 
-`### Magdalena Bueno Pedrera
-<img src='/Malena.jpg' width='200px'>
-
+### Magdalena Bueno Pedrera
 Estudiante de Ingeniería Informática en la Universidad de Jaén.
 * **Correo**: mmbp0003@red.ujaen.es
 
+------------------------------
 En el primera parte, nos piden que veamos si las monedas son validas o no y para ellos con esta salida vemos que nos da 2; es decir, que todas las monedas 
 que se han introducido son posibles.
-
-PS C:\Users\user\Desktop\Practica2\dagil-2022-2023-practica-2a-Mmbp0003> npm run test
-
-> dagil-2022-2023-practica-2a-mmbp0003@1.0.0 test
-> jasmine
 
 Aplicación MONEDAS
 
@@ -33,11 +27,7 @@ Started
 
 Vemos que pone que el resultado es 2; por lo tanto, ahora pondre un ejemplo con una moneda que no existe para que se vea que el resultado de cada
 una de ellas coincide
-
-PS C:\Users\user\Desktop\Practica2\dagil-2022-2023-practica-2a-Mmbp0003> npm run test
-
-> dagil-2022-2023-practica-2a-mmbp0003@1.0.0 test
-> jasmine
+---------------------------
 
 Aplicación MONEDAS
 ==================
@@ -50,7 +40,6 @@ Started
 9 specs, 0 failures
 Finished in 0.011 seconds
 Randomized with seed 10929 (jasmine --random=true --seed=10929)
-PS C:\Users\user\Desktop\Practica2\dagil-2022-2023-practica-2a-Mmbp0003> 
 
 Que el resultado sea -1 nos demuestra que realmente funciona en el caso de que la moneda que se haya introducido no sea posible; por lo tanto, al tener esta funcion 
 resuelta, podemos seguir con los expect de la siguiente parte. Para ello ire poniendo los resultado de todos los expect con los que cuenta este ejercicio. 
